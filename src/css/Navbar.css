@@ -1,0 +1,167 @@
+/* navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: burlywood;
+}
+
+.navbar-container {
+  margin: 0 auto;
+}
+
+.logo-cart-bars {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.7rem;
+}
+
+.logo-cart-bars .logo {
+  text-decoration: none;
+  color: #000;
+}
+
+.cart-bars {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-link {
+  font-size: 1.5rem;
+}
+
+.user-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: darkslategray;
+  display: flex;
+  align-items: center;
+}
+
+.user-estates {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.user-estates:hover {
+  padding: 0.1rem 0.3rem;
+  background: rgb(218, 198, 172);
+  border-radius: 5px
+}
+
+.cart-bars .user {
+  font-weight: 600;
+}
+
+.bars {
+  font-size: 1.7rem;
+  transition: all 0.4s linear;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.links {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: burlywood;
+  height: 0;
+  transition: height 1.0s ease;
+}
+
+.links-show {
+  /* height: 190px; */
+}
+
+.hr-brown {
+  color: burlywood;
+}
+
+.hr-black {
+  color: #000;
+}
+
+.mobile-no-show {
+  display: none;
+}
+
+.link {
+  text-decoration: none;
+  padding: 0.4rem 0.7rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: darkslategray;
+}
+
+.link:hover {
+  background: rgb(236, 211, 179);
+  padding: 0.2rem 0.9rem;
+  font-weight: bold;
+  color: var(--green-color);
+}
+
+@media screen and (min-width: 996px) {
+  .navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo-cart-bars {
+    width: 30%;
+  }
+
+  .desktop-no-show {
+    display: none;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .hr-brown {
+    display: none;
+  }
+
+  .links {
+    /* width: 40%; */
+    flex-direction: row;
+    align-items: center;
+    overflow: visible;
+    padding: 1.5rem;
+  }
+
+  .mobile-no-show {
+    width: 10%;
+    display: flex;
+    margin-right: 2rem;
+  }
+
+    .cart-link {
+      margin-right: 1rem;
+    }
+
+  .link:hover {
+    padding: 0.4rem 0.7rem;
+    background: none;
+  }
+}
+
+.logout-btn {
+  margin-left: -0.5rem;
+  font-size: 0.85rem;
+  background: none;
+  border: none;
+}
+
+.logout-btn:hover {
+  color: brown;
+  cursor: pointer;
+}

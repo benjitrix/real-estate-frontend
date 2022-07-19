@@ -1,0 +1,11 @@
+.adverts {
+  padding: 0.4rem;
+  background-color: var(--green-color);
+}
+
+.adverts p {
+  text-align: center;
+  font-weight: 600;
+  margin: 0em;
+  overflow: hidden;
+}
